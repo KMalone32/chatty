@@ -59,6 +59,37 @@ body {
   margin-top: 28px;
 }
 
+/* Message Style */
+.mess {
+  height: 50px;
+}
+
+.myMess {
+  float: left;
+  padding: 9px;
+}
+
+#userImg {
+  width: 40px;
+}
+
+.profile {
+  border-right: solid 1px black;
+  float: left;
+  padding-right: 15px;
+}
+
+.theMess {
+  float: right;
+  padding: 9px;
+  border-left: solid 1px black;
+}
+
+.input-box {
+  padding: 20px;
+  width: 100%;
+}
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   /* Remove the padding we set earlier */

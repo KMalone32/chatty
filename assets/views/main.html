@@ -6,9 +6,20 @@
 <div class="jumbotron">
 
 	<form ng-submit="addMessage(newMessage)">
-		<input ng-model="newMessage" type="text" placeholder="Hello!">
+		<input class="input-box" ng-model="newMessage" type="text" placeholder="Hello!">
 	</form>
-
-	<div ng-repeat="message in messages track by $index">{{ message }}</div>
+  <br>
+	<div class="mess" ng-repeat="message in messages track by $index">
+    <div class="profile">
+      <img id="userImg" ng-src="{{ message.profile_pic }}">
+      {{ message.userName }}
+    </div>
+    <div class="myMess">
+      {{ message.message }}
+    </div>
+    <div class="theMess">
+      {{ message.time | date : 'hh:mm a' }}
+    </div>
+  </div>
 
 </div>
